@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/phase--2-week--1-bank-of-flatiron/static/css/main.5d7444b8.css",
+    "main.js": "/phase--2-week--1-bank-of-flatiron/static/js/main.1dfbba1f.js",
+    "static/js/453.d3943c81.chunk.js": "/phase--2-week--1-bank-of-flatiron/static/js/453.d3943c81.chunk.js",
+    "index.html": "/phase--2-week--1-bank-of-flatiron/index.html",
+    "main.5d7444b8.css.map": "/phase--2-week--1-bank-of-flatiron/static/css/main.5d7444b8.css.map",
+    "main.1dfbba1f.js.map": "/phase--2-week--1-bank-of-flatiron/static/js/main.1dfbba1f.js.map",
+    "453.d3943c81.chunk.js.map": "/phase--2-week--1-bank-of-flatiron/static/js/453.d3943c81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d7444b8.css",
+    "static/js/main.1dfbba1f.js"
+  ]
+}
