@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
+import Rows from "./Rows.js"
 
 
-const TransactionTable = ({ transactions }) => {
+
+const TransactionTable = ({ transactions,setTransactions }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  
 
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+
   );
+  const mappedRows = transactions.map((item,index)=>{
+    return (<Rows key={index} date={item.date} category={item.category} description={item.description} amount={item.amount}/>)})
+  
 
   return (
     <table>
       <thead>
         <tr>
-          <th colSpan="50">Royal Bank of Flatiron bg"blue"</th>
+          <th colSpan="50">Royal Bank of Flatiron </th>
         </tr>
         <tr>
             <th colSpan="150">
@@ -32,14 +39,8 @@ const TransactionTable = ({ transactions }) => {
         </tr>
       </thead>
       <tbody>
-        {filteredTransactions.map((transaction, index) => (
-          <tr key={index}>
-            <td>{transaction.date}</td>
-            <td>{transaction.category}</td>
-            <td>{transaction.description}</td>
-            <td>${transaction.amount}</td>
-          </tr>
-        ))}
+      {mappedRows}
+      
       </tbody>
     </table>
   );
